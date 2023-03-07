@@ -68,7 +68,7 @@ const Landing = () => {
         Click here for more information
       </motion.a>
       <motion.p
-        className="font-spacegrotesk font-light text-xs pb-[17px] absolute mx-0 bottom-0 lg:hidden"
+        className="font-spacegrotesk font-light text-xs absolute mx-0 bottom-8 lg:hidden"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
