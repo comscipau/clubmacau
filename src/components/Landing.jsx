@@ -46,7 +46,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="flex flex-col items-center text-white gradientBG relative">
+    <div className="flex flex-col items-center text-white gradientBG relative h-full">
       <motion.img
         src={MACAU}
         alt="MACAU"
