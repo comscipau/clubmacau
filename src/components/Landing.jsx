@@ -6,11 +6,9 @@ import React from "react";
 const Landing = () => {
   const fadeInToUp = {
     hidden: {
-      y: 10,
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
@@ -48,7 +46,7 @@ const Landing = () => {
   };
 
   return (
-    <div className={`flex flex-col items-center w-full text-white gradientBG`}>
+    <div className="flex flex-col items-center w-full h-screen lg:h-full text-white gradientBG relative">
       <motion.img
         src={MACAU}
         alt="MACAU"
@@ -71,7 +69,16 @@ const Landing = () => {
         Click here for more information
       </motion.a>
       <motion.p
-        className="mt-[25rem] lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]"
+        className="font-spacegrotesk font-light text-xs pb-[17px] absolute mx-0 bottom-0 lg:hidden"
+        variants={fadeInToUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        Copyright {new Date().getFullYear()} ClubMacau | All Rights Reserved.
+      </motion.p>
+      <motion.p
+        className="lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl pb-[17px] lg:pb-[2.75rem] hidden lg:block"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
