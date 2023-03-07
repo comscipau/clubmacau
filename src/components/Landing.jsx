@@ -30,7 +30,8 @@ const Landing = () => {
       <img
         src={MACAU}
         alt="MACAU"
-        className="pt-[3.875rem] lg:pt-[5.3125rem]"
+        // className="pt-[3.875rem] lg:pt-[5.3125rem]"
+        className="pt-[4.3125rem] lg:pt-[5.3125rem]"
       />
       <Countdown date="2023-06-01T00:00:00" renderer={renderer} />
       <a
