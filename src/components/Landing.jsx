@@ -1,7 +1,7 @@
-import React from "react";
 import Countdown from "react-countdown";
 import MACAU from "../assets/macau_lg.png";
 import { motion } from "framer-motion";
+import React from "react";
 
 const Landing = () => {
   const fadeInToUp = {
@@ -20,7 +20,7 @@ const Landing = () => {
   };
 
   // Random component
-  const Completionist = () => <span>You are good to go!</span>;
+  const Completionist = () => <span>Coming soon!</span>;
 
   // Renderer callback with condition
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -48,7 +48,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="flex flex-col items-center text-white gradientBG">
+    <div className={`flex flex-col items-center w-full text-white gradientBG`}>
       <motion.img
         src={MACAU}
         alt="MACAU"
@@ -71,7 +71,7 @@ const Landing = () => {
         Click here for more information
       </motion.a>
       <motion.p
-        className="mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]"
+        className="mt-[20rem] lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
