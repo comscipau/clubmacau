@@ -26,7 +26,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full text-white gradientBG">
+    <div className="flex flex-col items-center w-full h-screen text-white gradientBG">
       <img
         src={MACAU}
         alt="MACAU"
