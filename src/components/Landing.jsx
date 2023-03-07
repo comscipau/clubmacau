@@ -29,17 +29,17 @@ const Landing = () => {
       // Render a countdown
       return (
         <motion.p
-          className="mt-8 text-4xl font-bold lg:text-9xl lg:mt-16"
+          className="mt-8 lg:mt-0 text-4xl font-bold lg:text-7xl"
           variants={fadeInToUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
           {days}
-          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">D</span> {hours}
-          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">H</span> {minutes}
-          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">M</span> {seconds}
-          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">S</span>
+          <span className="ml-2 text-2xl lg:text-5xl lg:ml-4">D</span> {hours}
+          <span className="ml-2 text-2xl lg:text-5xl lg:ml-4">H</span> {minutes}
+          <span className="ml-2 text-2xl lg:text-5xl lg:ml-4">M</span> {seconds}
+          <span className="ml-2 text-2xl lg:text-5xl lg:ml-4">S</span>
         </motion.p>
       );
     }
@@ -50,7 +50,7 @@ const Landing = () => {
       <motion.img
         src={MACAU}
         alt="MACAU"
-        className="mt-[3.875rem] lg:mt-[5.3125rem]"
+        className="mt-[3.875rem] lg:mt-0 lg:scale-75"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
@@ -69,7 +69,7 @@ const Landing = () => {
       </motion.a>
       <motion.p
         // className="font-spacegrotesk font-light text-xs absolute mx-0 top-40 lg:hidden"
-        className="font-spacegrotesk font-light text-xs mt-40 lg:hidden"
+        className="font-spacegrotesk font-light text-xs lg:text-2xl mt-40"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
@@ -77,7 +77,7 @@ const Landing = () => {
       >
         Copyright {new Date().getFullYear()} ClubMacau | All Rights Reserved.
       </motion.p>
-      <motion.p
+      {/* <motion.p
         className="lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl pb-[17px] lg:pb-[2.75rem] hidden lg:block"
         variants={fadeInToUp}
         initial="hidden"
@@ -85,7 +85,7 @@ const Landing = () => {
         viewport={{ once: true }}
       >
         Copyright {new Date().getFullYear()} ClubMacau | All Rights Reserved.
-      </motion.p>
+      </motion.p> */}
     </div>
   );
 };
