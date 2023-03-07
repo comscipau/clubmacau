@@ -12,6 +12,10 @@
   src: url("./fonts/OpenSans-Regular.ttf");
 }
 
+body {
+  height: 95vh;
+}
+
 .gradientBG {
   background: radial-gradient(
         79.74% 112.13% at 86.81% 75.05%,
