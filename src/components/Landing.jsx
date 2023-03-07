@@ -14,19 +14,19 @@ const Landing = () => {
     } else {
       // Render a countdown
       return (
-        <p className="text-4xl lg:text-9xl font-bold mt-8 lg:mt-16">
+        <p className="mt-8 text-4xl font-bold lg:text-9xl lg:mt-16">
           {days}
-          <span className="text-2xl lg:text-7xl ml-2 lg:ml-4">D</span> {hours}
-          <span className="text-2xl lg:text-7xl ml-2 lg:ml-4">H</span> {minutes}
-          <span className="text-2xl lg:text-7xl ml-2 lg:ml-4">M</span> {seconds}
-          <span className="text-2xl lg:text-7xl ml-2 lg:ml-4">S</span>
+          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">D</span> {hours}
+          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">H</span> {minutes}
+          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">M</span> {seconds}
+          <span className="ml-2 text-2xl lg:text-7xl lg:ml-4">S</span>
         </p>
       );
     }
   };
 
   return (
-    <div className="gradientBG w-full text-white flex flex-col items-center">
+    <div className="flex flex-col items-center w-full text-white gradientBG">
       <img
         src={MACAU}
         alt="MACAU"
@@ -39,7 +39,7 @@ const Landing = () => {
       >
         Click here for more information
       </a>
-      <p className="mt-[11.9375rem] lg:mt-[13.1875rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]">
+      <p className="mt-[11.9375rem] lg:mt-[13.1875rem] font-spacegrotesk font-light text-xs lg:text-2xl pb-[17px] lg:pb-[2.75rem]">
         Copyright {new Date().getFullYear()} ClubMacau | All Rights Reserved.
       </p>
     </div>
