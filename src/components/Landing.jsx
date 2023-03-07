@@ -40,7 +40,7 @@ const Landing = () => {
       >
         Click here for more information
       </a>
-      <p className="pt-[11.9375rem] lg:pt-[13.1875rem] font-spacegrotesk font-light text-xs lg:text-2xl pb-[17px] lg:pb-[2.75rem]">
+      <p className="pt-[11.9375rem] lg:pt-[13.1875rem] font-spacegrotesk font-light text-xs lg:text-2xl pb-[2.75rem]">
         Copyright {new Date().getFullYear()} ClubMacau | All Rights Reserved.
       </p>
     </div>
