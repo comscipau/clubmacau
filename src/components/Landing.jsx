@@ -71,7 +71,7 @@ const Landing = () => {
         Click here for more information
       </motion.a>
       <motion.p
-        className="mt-[20rem] lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]"
+        className="mt-[25rem] lg:mt-[14rem] font-spacegrotesk font-light text-xs lg:text-2xl mb-[17px] lg:mb-[2.75rem]"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
