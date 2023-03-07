@@ -50,8 +50,7 @@ const Landing = () => {
       <motion.img
         src={MACAU}
         alt="MACAU"
-        // className="mt-[3.875rem] lg:mt-[5.3125rem]"
-        className="mt-[4.3125rem] lg:mt-[5.3125rem]"
+        className="mt-[3.875rem] lg:mt-[5.3125rem]"
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
