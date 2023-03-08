@@ -45,7 +45,7 @@ const Landing = () => {
     }
   };
 
-  var myAdjBottom;
+  var myAdjBottom = "bottom-20";
   const [windowHeight, setWindowHeight] = useState(window.screen.height);
   useEffect(() => {
     const handleWindowResize = () => {
@@ -57,11 +57,11 @@ const Landing = () => {
     };
   });
 
-  if (windowHeight <= 800) {
-    myAdjBottom = "bottom-20";
-  } else {
-    myAdjBottom = "bottom-10";
-  }
+  // if (windowHeight <= 800) {
+  //   myAdjBottom = "bottom-20";
+  // } else {
+  //   myAdjBottom = "bottom-10";
+  // }
 
   return (
     <div className="flex flex-col items-center text-white gradientBG relative h-screen">
