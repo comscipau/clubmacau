@@ -45,6 +45,7 @@ const Landing = () => {
     }
   };
 
+  var myAdjBottom;
   const [windowHeight, setWindowHeight] = useState(window.screen.height);
   useEffect(() => {
     const handleWindowResize = () => {
@@ -55,6 +56,12 @@ const Landing = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   });
+
+  if (windowHeight <= 800) {
+    myAdjBottom = "bottom-20";
+  } else {
+    myAdjBottom = "bottom-10";
+  }
 
   return (
     <div className="flex flex-col items-center text-white gradientBG relative h-screen">
@@ -81,7 +88,7 @@ const Landing = () => {
       </motion.a>
       <motion.p
         // className="font-spacegrotesk font-light text-xs absolute mx-0 top-40 lg:hidden"
-        className="font-spacegrotesk font-light text-xs lg:text-2xl absolute mx-0 bottom-20"
+        className={`font-spacegrotesk font-light text-xs lg:text-2xl absolute mx-0 ${myAdjBottom}`}
         variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
