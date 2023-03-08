@@ -65,7 +65,7 @@ const Landing = () => {
 
   return (
     <div className="flex flex-col items-center text-white gradientBG relative h-screen">
-      <p>{windowHeight}</p>
+      {/* <p>{windowHeight}</p> */}
       <motion.img
         src={MACAU}
         alt="MACAU"
