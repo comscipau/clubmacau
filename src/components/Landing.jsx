@@ -1,7 +1,7 @@
 import Countdown from "react-countdown";
 import MACAU from "../assets/macau_lg.png";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Landing = () => {
   const fadeInToUp = {
@@ -45,8 +45,20 @@ const Landing = () => {
     }
   };
 
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  });
+
   return (
     <div className="flex flex-col items-center text-white gradientBG relative h-screen">
+      <p>{windowHeight}</p>
       <motion.img
         src={MACAU}
         alt="MACAU"
