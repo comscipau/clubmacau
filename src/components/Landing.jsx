@@ -45,10 +45,10 @@ const Landing = () => {
     }
   };
 
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState(window.screen.height);
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowHeight(window.innerHeight);
+      setWindowHeight(window.screen.height);
     };
     window.addEventListener("resize", handleWindowResize);
     return () => {
